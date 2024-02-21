@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Selector ('Psudo elements')</title>
+    <style>
+      h4::before {
+        content: "🧨";
+      }
+      h4::after {
+        content: "👀";
+      }
+      h3::first-letter {
+        color: red;
+      }
+      h3::first-line {
+        color: blue;
+      }
+      ::selection {
+        background: orange;
+        color: white;
+      }
+      ::placeholder {
+        color: red;
+        background-color: aqua;
+      }
+      /* Root Use for All Web Background-color or Color */
+      :root {
+        --bg: blue;
+        --col: white;
+        --bg1: darkblue;
+        --col2: red;
+      }
+      h1 {
+        background: var(--bg);
+        color: var(--col);
+      }
+      h2 {
+        background: var(--bg1);
+        color: var(--col2);
+      }
+      li::marker {
+        color: red;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dishant Sangani</h1>
+    <h2>There Are All Psudo Elements</h2>
+    <input type="text" name="" placeholder="Enter Your Name" id="" />Name.
+    <h4>Dishant</h4>
+    <h3>
+      Heading<br />
+      Only Work in First Line
+    </h3>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contect Us</li>
+      <li>Help</li>
+    </ul>
+  </body>
+</html>

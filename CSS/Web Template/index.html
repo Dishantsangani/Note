@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial;
+      }
+      img {
+        max-width: 100%;
+      }
+      .header {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        background: rgb(55, 81, 126);
+      }
+      .header-sub {
+        width: 70%;
+        height: auto;
+        margin: 0px auto;
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .header-top h1 {
+        font-size: 50px;
+        color: white;
+      }
+      .header-top p {
+        font-size: 20px;
+        color: white;
+      }
+      .header-top {
+        margin-top: 150px;
+      }
+      .img {
+        animation-name: a;
+        animation-delay: 1s;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+      @keyframes a {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(50px);
+        }
+      }
+      @media only screen and (min-width: 0px) and (max-width: 600px) {
+        .header-sub {
+          width: 70%;
+          height: auto;
+          margin: 0px auto;
+          padding: 50px 0;
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+        .header-top h1 {
+          font-size: 25px;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-sub">
+        <div class="header-top">
+          <h1>
+            Better Solutions For Your <br />
+            Business
+          </h1>
+          <p>
+            We are team of talented designers making websites<br />
+            with Bootstrap
+          </p>
+        </div>
+        <div class="header-bottom">
+          <img class="img" src="hero-img.png" width="700px" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

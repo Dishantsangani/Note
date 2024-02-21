@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Responsive Using Transform</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-rows: repeat(1, 300px);
+        grid-auto-rows: 300px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-content: center;
+        gap: 20px;
+      }
+      .child {
+        background-color: yellow;
+        overflow: hidden;
+      }
+      img {
+        object-fit: cover;
+        transition: 1s;
+      }
+      .child1:hover {
+        transform: rotate(180deg);
+        overflow: hidden;
+      }
+      .child2:hover {
+        transform: perspective(200px) rotateX(180deg);
+      }
+      .child3:hover {
+        transform: perspective(200px) rotateY(-180deg);
+      }
+      .child4:hover {
+        overflow: hidden;
+        transform: perspective(200px) translate3d(10px, 20px, 30px)
+          rotate(45deg);
+      }
+      .child5:hover {
+        transform: skew(45deg);
+      }
+      .child6:hover {
+        transform: skewX(20deg);
+      }
+      .child7:hover {
+        transform: skewY(20deg);
+      }
+      .child8:hover {
+        transform: translate(10px, 50px);
+      }
+      .child9:hover {
+        transform: translateX(50px);
+      }
+      .child10:hover {
+        transform: rotateY(50px);
+      }
+      .child11:hover {
+        transform: perspective(200px) translate3d(100px, 200px, 3000px)
+          rotate(45deg);
+      }
+      .child12:hover {
+        /* overflow: hidden; */
+        transform: scale(2);
+      }
+      .child13:hover {
+        transform: scaleX(2);
+      }
+      .child14:hover {
+        transform: scaleY (2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="child child1">
+        <img src="./1.jpeg" height="100%" width="100%" srcset="" />
+      </div>
+      <div class="child child2">
+        <img src="./1.jpeg" height="300px" width="320px" srcset="" />
+      </div>
+      <div class="child child3">
+        <img src="./1.jpeg" height="300px" width="320px" srcset="" />
+      </div>
+      <div class="child child4">
+        <img src="./1.jpeg" height="300px" width="320px" srcset="" />
+      </div>
+      <div class="child child5">
+        <img src="./1.jpeg" height="300px" width="320px" srcset="" />
+      </div>
+      <div class="child child6">
+        <img src="./1.jpeg" height="300px" width="320px" srcset="" />
+      </div>
+      <div class="child child7">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+      <div class="child child8">
+        <img src="./1.jpeg" width="320px" height="300px" alt="" srcset="" />
+      </div>
+      <div class="child child9">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+      <div class="child child10">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+      <div class="child child11">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+      <div class="child child12">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+      <div class="child child13">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+      <div class="child child14">
+        <img src="./1.jpeg" height="300px" width="320px" alt="" srcset="" />
+      </div>
+    </div>
+  </body>
+</html>

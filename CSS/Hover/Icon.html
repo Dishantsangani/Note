@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>icon Hover</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        background: linear-gradient();
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      ul li {
+        width: 150px;
+        height: 150px;
+        background: rgb(45, 45, 94);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+      }
+      .fa {
+        color: white;
+        font-size: 50px;
+        transition: 0.4s;
+      }
+      ul li:hover .fa {
+        font-size: 70px;
+        border: 2px solid;
+        border-radius: 50%;
+        transform: perspective(200px) rotatex(180deg);
+      }
+      .android {
+        background-color: black;
+      }
+      .amazon {
+        background-color: yellow;
+      }
+      .apple {
+        background-color: black;
+        color: white;
+      }
+      .btco {
+        border-color: #f7931a;
+        color: yellowgreen;
+      }
+      .github {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="android">
+        <i class="fa fa-android" style="font-size: 36px; color: green"></i>
+      </li>
+      <li class="amazon">
+        <i
+          class="fa fa-amazon"
+          style="font-size: 36px; color: rgb(128, 128, 90)"
+        ></i>
+      </li>
+      <li class="apple"><i class="fa fa-apple" style="font-size: 36px"></i></li>
+      <li class="btco">
+        <i class="fa fa-btc" style="font-size: 36px"></i>
+      </li>
+      <li class="github">
+        <i class="fa fa-github" style="font-size: 36px"></i>
+      </li>
+    </ul>
+  </body>
+</html>

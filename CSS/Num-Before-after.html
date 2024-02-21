@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before After with Number</title>
+    <style>
+      body {
+        counter-reset: dishant;
+      }
+      h1::before {
+        counter-increment: dishant;
+        content: "dishant: " counter(dishant) ": ";
+        color: red;
+      }
+      h1 {
+        counter-reset: sub;
+      }
+      h2::before {
+        counter-increment: sub;
+        content: "sub:" counter(dishant) "." counter(sub) "";
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web Design</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JS</h2>
+    <h2>Bootstrap</h2>
+
+    <h1>Graphics Designer</h1>
+    <h2>PHOTOSHOP</h2>
+    <h2>ILLUSTRATOR</h2>
+    <h2>CANVAS</h2>
+    <h2>CORAL DRAW</h2>
+
+    <h1>Web Design</h1>
+    <h2>HTML</h2>
+    <h2>CSS</h2>
+    <h2>JS</h2>
+    <h2>Bootstrap</h2>
+
+    <h1>Graphics Designer</h1>
+    <h2>PHOTOSHOP</h2>
+    <h2>ILLUSTRATOR</h2>
+    <h2>CANVAS</h2>
+    <h2>CORAL DRAW</h2>
+  </body>
+</html>

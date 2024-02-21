@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Form</title>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .name {
+        flex: 1 0 140px;
+        background: royalblue;
+      }
+      .password {
+        flex: 1 0 120px;
+        background: brown;
+      }
+      button {
+        flex: 1 0 60px;
+        background-color: blueviolet;
+        border: none;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <input type="name" placeholder="Username"     />
+      <input type="password" placeholder="Password" />
+      <button>Submit</button>
+    </div>
+  </body>
+</html>

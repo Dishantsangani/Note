@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before-After</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .para {
+        position: absolute;
+        top: 250px;
+      }
+      .header {
+        width: 300px;
+        height: 50px;
+        background: red;
+        border-radius: 5px;
+        position: relative;
+        color: white;
+        font-size: 50px;
+        overflow: hidden;
+      }
+      .header::before {
+        content: "";
+        position: absolute;
+        width: inherit;
+        height: inherit;
+        background: yellow;
+        transform: translateX(100%);
+        transform-origin: right bottom;
+        transition: 2s;
+      }
+      .header:hover::before {
+        transform: translateX(0%);
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="para">Enter Your password:</p>
+    <div class="header">Dishant</div>
+  </body>
+</html>

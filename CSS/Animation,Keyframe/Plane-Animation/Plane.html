@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plane Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+      }
+      .header {
+        background-image: url(./footer-background.png);
+        height: 380px;
+        width: 500%;
+        animation-name: plane;
+        animation-delay: 1s;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes plane {
+        form {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(-1000px);
+        }
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 40%;
+        animation-name: plane1;
+        animation-delay: 1s;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes plane1 {
+        form {
+          transform: rotate(0deg);
+          top: 0;
+        }
+        to {
+          transform: rotate(20deg);
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header"></div>
+    <img src="./flight.png" alt="" srcset="" />
+  </body>
+</html>

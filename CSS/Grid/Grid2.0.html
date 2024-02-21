@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid columns collebs</title>
+    <style>
+      .main {
+        display: grid;
+        grid-template-rows: repeat(1, 300px);
+        grid-auto-rows: 300px;
+        grid-template-columns: repeat(4, 300px);
+        grid-gap: 20px;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .child {
+        background-color: brown;
+        overflow: hidden;
+      }
+      .child2 {
+        grid-column-start: 2;
+        grid-column-end: 5;
+      }
+      .child1 {
+        grid-row: 1/4;
+      }
+      .child4 {
+        grid-column: 3/5;
+        grid-row: 2/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="child child1">
+        <img
+          src="./1.jpeg"
+          height="950px
+        "
+          width="300px"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="child child2">
+        <img src="./1.jpeg" alt="" srcset="" height="300px" width="950px" />
+      </div>
+      <div class="">
+        <img src="./1.jpeg" height="300px" width="300px" alt="" srcset="" />
+      </div>
+      <div class="child child4">
+        <img src="./1.jpeg" alt="" height="700px" width="630px" srcset="" />
+      </div>
+      <div class="child child5">
+        <img src="./1.jpeg" height="300px" width="300px" alt="" srcset="" />
+      </div>
+      <div class="child">
+        <img src="./1.jpeg" width="300px" height="300px" alt="" srcset="" />
+      </div>
+      <div class="child">
+        <img src="./1.jpeg" width="300px" height="300px" alt="" srcset="" />
+      </div>
+      <div class="child">
+        <img src="./1.jpeg" width="300px" height="300px" alt="" srcset="" />
+      </div>
+      <div class="child">
+        <img src="./1.jpeg" width="300px" height="300px" alt="" srcset="" />
+      </div>
+    </div>
+  </body>
+</html>

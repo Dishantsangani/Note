@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football animation</title>
+    <style>
+      img {
+        position: relative;
+        animation-name: dev;
+        animation-delay: 1s;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-timing-function: cubic-bezier(0, 0.99, 0.96, -0.01);
+      }
+      @keyframes dev {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        20% {
+          top: 500px;
+          left: 250px;
+        }
+        40% {
+          top: 0px;
+          left: 500px;
+        }
+        60% {
+          top: 500px;
+          left: 750px;
+        }
+        80% {
+          top: 0px;
+          left: 1000px;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../../Image/foot.png" alt="" width="250px" srcset="" />
+  </body>
+</html>
