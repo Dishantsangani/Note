@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empty & Remove</title>
+    <style>
+      .header {
+        padding: 20px;
+        background: yellow;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Welcome To Dishant Project's</h1> -->
+    <div class="header">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      dolores, vitae sint dolorum doloremque unde iusto debitis quidem dolor
+      sunt porro nemo nihil illum a obcaecati vero rerum quas necessitatibus
+      eligendi omnis odio quibusdam. Error tenetur et, quod modi expedita
+      laudantium hic, aut esse sint quos distinctio nulla magnam dolorum ipsam
+      vel ea odio consequatur nam repellendus dolor omnis sit itaque? Est, hic
+      nostrum! Nam eligendi aspernatur omnis sed, mollitia fugit dignissimos
+      fugiat. Rerum quo vitae molestiae recusandae tempore veritatis odit. Fuga
+      iste labore rerum nesciunt nam. Unde incidunt id officia harum sequi
+      laudantium voluptates error repellat. Alias, doloribus veritatis aliquam
+      natus voluptatem mollitia reprehenderit consectetur ipsam aperiam
+      incidunt, soluta ex delectus, hic autem porro! Minus fugit aperiam
+      laudantium magnam, quibusdam reprehenderit facilis id deserunt quae odio
+      dignissimos nostrum voluptas perferendis nemo beatae molestias quam ab
+      placeat minima enim impedit voluptatum ipsa qui. Minus, eos in? Sapiente
+      in est ex, quasi impedit dolor amet, quibusdam beatae alias tempora
+      laudantium, quae dolorem tempore dolorum delectus accusantium facere sint
+      eius consequatur blanditiis dignissimos at nulla? Quae iure reprehenderit
+      officiis non nam? Sapiente necessitatibus maiores ducimus cupiditate fuga,
+      assumenda rem! Libero ullam est nihil ratione dolore? Amet quod fugiat
+      iure atque consequuntur molestias expedita voluptatibus aliquam incidunt
+      ab ut sequi, dolores vitae illo laboriosam exercitationem culpa velit,
+      optio tempora ea repudiandae necessitatibus natus? Odit, vitae cumque at
+      ex voluptatibus quidem quaerat quisquam fugit praesentium voluptas
+      corrupti veritatis modi reiciendis, sapiente repudiandae. Nisi quis
+      corrupti voluptatem consectetur molestias. Laborum nesciunt recusandae
+      iusto earum odit.
+    </div>
+    <button class="empty">Empty</button>
+    <button class="remove">Remove</button>
+  </body>
+  <script src="./jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".empty").click(function () {
+        $(".header").empty(1000);
+      });
+      $(".remove").click(function () {
+        $(".header").remove();
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Class, Remove Class, Toggle Class</title>
+    <style>
+      .a {
+        background: firebrick;
+        color: white;
+        width: 250px;
+        padding: 20px;
+      }
+      .b {
+        background: darkcyan;
+        color: white;
+        width: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome To Dishant Project's</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sequi,
+      iusto facere similique dolore, in esse non et deserunt eius expedita
+      dolorem minus laudantium dolores veniam architecto totam, repellat
+      sapiente?
+    </p>
+    <button class="add">Add</button>
+    <button class="remove">Remove</button>
+    <button class="toggle">Toggle</button>
+  </body>
+  <script src="./jquery-3.7.1.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".add").click(function () {
+        $("h1").addClass("a");
+        $("p").addClass("b");
+      });
+      $(".remove").click(function () {
+        $("h1").removeClass("a");
+        $("p").removeClass("b");
+      });
+      $(".toggle").click(function () {
+        $("h1").toggleClass("a");
+        $("p").toggleClass("b");
+      });
+    });
+  </script>
+</html>

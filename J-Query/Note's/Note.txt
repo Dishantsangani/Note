@@ -1,0 +1,15 @@
+✔ There are three types of selectors in j-Queyry
+1.Element Selector -this is an Example of element selector which clicks on all p
+= $('p').click();
+2.id Selector - This is an Example of id selector
+= $(#id).click();
+3.class Selector - This is an example of clss selector
+= $('.odd).click();
+4.Other selectors
+= $(*).click() = * is click on all the element
+
+✔ Events In J-Query
+Mouse Events = click , double-click, Mouseenter, Mouseleave
+Keybord Events = keypress, keydown, MediakeystatusMap
+Form Events= submit, change, foucs, blur
+document/windows Events = load, resize, scroll, unload

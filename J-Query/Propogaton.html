@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propogation</title>
+    <style>
+      p {
+        background-color: black;
+        color: white;
+        margin: 20px;
+        padding: 10px;
+        text-align: center;
+        font-size: 30px;
+        border-radius: 10px;
+      }
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      button {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: white;
+        color: black;
+        font-size: 23px;
+        border-radius: 7px;
+        height: 40px;
+        width: 100px;
+        transition-duration: 0.4s;
+      }
+      button:hover {
+        background-color: #04aa6d;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Dishant Sangani</h1>
+      <p>
+        👋🏻Hello Everyone My Name is Dishant Sangani, And I Am a Web Developer
+        From India...!
+      </p>
+      <button>Submit</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".header").click(function () {
+          alert("You click on Header Section..💡");
+        });
+        $("button").click(function (e) {
+          alert("Submited Successfully..✔");
+          e.stopPropagation();
+        });
+        $("p").click(function (e) {
+          alert("You Click on Paragraph section..📃");
+          e.stopPropagation();
+        });
+        $("h1").click(function (e) {
+          alert("You Click on Heading Section..💻");
+          e.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>

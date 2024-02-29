@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animate J-Query</title>
+    <style>
+      .ract {
+        width: 250px;
+        height: 250px;
+        background-color: black;
+        color: white;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="ract"></div>
+    <button class="btn">ZOOM IN</button>
+    <script src="./jquery-3.7.1.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".ract").animate({
+            left: "100px",
+            top: "100px",
+            width: "+=15px",
+            height: "+=15px",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

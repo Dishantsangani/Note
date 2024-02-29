@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preventerd (Use for = Link check )</title>
+  </head>
+  <body>
+    <a href="https://amazon.in" class="prevent">Home</a>
+    <a href="https://amazon.in">About</a>
+    <h1></h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".prevent").click(function (e) {
+          e.preventDefault();
+          var x = e.isDefaultPrevented();
+          $("h1").html("Link Shared By Dishant<br>" + x);
+        });
+      });
+    </script>
+  </body>
+</html>
+  

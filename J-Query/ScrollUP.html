@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll UP, Scroll Down, Scroll Toggle</title>
+    <style>
+      .up {
+        background: yellow;
+        width: 60%;
+        padding: 20px;
+        margin: 0px auto;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 5px;
+        border: 3px solid black;
+      }
+      .down {
+        background: lightblue;
+        width: 60%;
+        padding: 20px;
+        margin: 0px auto;
+        display: none;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <div class="up">Dishant Sangani</div>
+  <div class="down">
+    Welcome To Dishant's Project.<br /><br />
+    i am a Web Developer From India.
+  </div>
+  <body>
+    <script src="./Note's/jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".up").click(function () {
+          //   $(".down").slideUp(1000);
+          //   $(".down").slideDown(1000);
+          $(".down").slideToggle(1000);
+        });
+      });
+    </script>
+  </body>
+</html>

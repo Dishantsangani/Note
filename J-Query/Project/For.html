@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Form</title>
+  </head>
+  <body>
+    <h1>Login-Form</h1>
+    Username: <input type="text" id="username" placeholder="Username" /><br />
+    Password:
+    <input type="password" id="password" placeholder="password" /><br /><br />
+    <button type="submit" class="submit">Submit</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          var username = $("#username").val();
+          var password = $("#password").val();
+
+          if (username == "" || password == "") {
+            // e.stopPropagation();
+            alert("Please fill out all fields");
+          } else {
+            // Add your login authentication code here
+            alert("Logged in as   " + username);
+            window.location.href = "homepage.html";
+            window.open("homepage.html", "_blank");
+            // window.location = "http://localhost:5000";
+          }
+        });
+      });   
+      // $(".submit").click(function (e) {
+      //   e.stopPropagation();
+      //   alert("Submiteed succesfully");
+      // });
+    </script>
+  </body>
+</html>

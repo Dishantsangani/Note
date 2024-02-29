@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      #a {
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(#662d8c, #ed1e79);
+      }
+      #b {
+        width: 5px;
+        height: 5px;
+        outline: 2px solid red;
+        outline-offset: 10px;
+        border-radius: 50%;
+        animation: a 1s linear 1s infinite alternate;
+      }
+      @keyframes a {
+        0% {
+          transform: translate3d(100px);
+        }
+        50% {
+          transform: translate(200px);
+          outline: 4px solid black;
+        }
+        100% {
+          transform: translate(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(document).mousemove(function (e) {
+          $("#a").html("page x :" + e.pageX + " page y" + e.pageY);
+          var a = e.pageX;
+          var b = e.pageY;
+          $("#b").offset({ top: b, left: a });
+        });
+      });
+    </script>
+  </body>
+</html>

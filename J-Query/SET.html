@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SET</title>
+  </head>
+  <body>
+    <p>Dishant <b>Sangani</b></p>
+    <input type="text" placeholder="Enter Name" />
+    <button class="html">Html</button>
+    <button class="text">text</button>
+    <button class="val">val</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".html").click(function () {
+          $("p").html("Hi My Name Is Dishant <mark>Sangani</mark>");
+        });
+        $(".text").click(function () {
+          $("p").text("Hi I am iCoder Web Solutions");
+        });
+        $(".val").click(function () {
+          $("input").val("Hello Everyone");
+        });
+      });
+    </script>
+  </body>
+</html>

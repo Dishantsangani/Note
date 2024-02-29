@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>width & height , innerHeight,width, outerHeight,width</title>
+    <style>
+      .rect {
+        width: 250px;
+        height: 250px;
+        border: 10px solid red;
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="rect"></div>
+    <button class="btn">Submit</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          var text = "";
+
+          //   Width & Height
+          text += "width is" + $(".rect").width() + "<br>";
+          text += "Height is" + $(".rect").height() + "<br><br>";
+
+          //   innerHeight & innerWidth
+          text += "innerWidth is" + $(".rect").innerWidth() + "<br>";
+          text += "innerHeight is" + $(".rect").innerHeight() + "<br><br>";
+
+          // outerHeight,outerWidth
+          text += "outerWidth is" + $(".rect").outerWidth() + "<br>";
+          text += "outerHeight is" + $(".rect").outerHeight() + "<br>";
+          // Total
+          text += "outerHeight is" + $(".rect").outerHeight(true) + "<br>";
+          text += "outerHeight is" + $(".rect").outerHeight(true) + "<br>";
+
+          $(".rect").html(text);
+        });
+      });
+    </script>
+  </body>
+</html>

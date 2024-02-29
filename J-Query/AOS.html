@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Animation On scroll</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background: black;
+      }
+      .header {
+        width: 450px;
+        height: 450px;
+        /* background: red; */
+        margin: 150px auto;
+      }
+      img {
+        width: 450px;
+        height: 450px;
+        background-size: cover;
+        border: 2px solid white;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header" data-aos="fade-in">
+      <img src="./Images/10.jpeg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="fade-down-right">
+      <img src="./Images/2.jpeg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="flip-down">
+      <img src="./Images/3.jpg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="flip-right">
+      <img src="./Images/4.jpeg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="slide-down">
+      <img src="./Images/5.png" alt="" srcset="" />
+    </div>
+    <div
+      class="header"
+      data-aos="slide-right"
+      data-aos-anchor-placement="top-center"
+    >
+      <img src="../Image/1.jpeg" alt="" />
+    </div>
+    <div class="header" data-aos="zoom-in">
+      <img src="./Images/6.jpg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="zoom-in-down">
+      <img src="./Images/7.jpeg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="zoom-out-down">
+      <img src="./Images/9.png" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="ease-in-back">
+      <img src="./Images/8.jpeg" alt="" srcset="" />
+    </div>
+    <div class="header" data-aos="ease-in-out-sine">
+      <img src="./Images/a.png" alt="" srcset="" />
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300, // offset (in px) from the original trigger point
+        duration: 1400, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+  </body>
+</html>

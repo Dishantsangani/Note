@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append, Prepend, After, Before</title>
+  </head>
+  <body>
+    <ul>
+      <li>Web</li>
+      <li>Design</li>
+      <li>ui-ux</li>
+      <li>Design</li>
+    </ul>
+    <button class="append">Append</button>
+    <button class="prepend">Prepend</button>
+    <button class="after">After</button>
+    <button class="before">Before</button>
+    <!-- <script src="./jquery-3.7.1.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".append").click(function () {
+          $("ul").append("<li>APPEND<li>");
+        });
+        $(".prepend").click(function () {
+          $("ul").prepend("<li>PREOEND<li>");
+        });
+        $(".after").click(function () {
+          $("ul").after("<li>AFTER<li>");
+        });
+        $(".before").click(function () {
+          $("ul").before("<li>BEFORE<li>");
+        });
+      });
+    </script>
+  </body>
+</html>
